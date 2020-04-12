@@ -15,6 +15,3 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
-
-const population = document.querySelector('#population').value;
-console.log('population', population);

@@ -3,13 +3,24 @@
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
-
+.navbar-brand {
+  color: #ffffff;
+  font-size: 30px;
+}
+.container {
+  background: #000000;
+}
+form {
+  margin: 20px;
+  padding: 10px;
+}
+.form-group label {
+  font-size: 20px;
+  color: #ffffff;
+}
 @media (min-width: 1281px) {
   .container {
     width: 60%;
-  }
-  form {
-    margin: 20px;
   }
 }
 
@@ -22,9 +33,6 @@
   .container {
     width: 60%;
   }
-  form {
-    margin: 20px;
-  }
 }
 
 /* 
@@ -35,9 +43,6 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .container {
     width: 80%;
-  }
-  form {
-    margin: 20px;
   }
 }
 
@@ -50,9 +55,6 @@
   .container {
     width: 60%;
   }
-  form {
-    margin: 20px;
-  }
 }
 
 /* 
@@ -64,16 +66,4 @@
   .container {
     width: 80%;
   }
-  form {
-    margin: 20px;
-  }
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-    
 }

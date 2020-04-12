@@ -30,9 +30,9 @@
   <body>
     <main>
       <!-- Image and text -->
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
-          <img src="./images/icons/icon-512x512.png" width="10%" height="10%" class="d-inline-block align-top" alt="">
+          <img src="./images/icons/icon-72x72.png" class="d-inline-block align-top" alt="">
           CONVERTER
         </a>
       </nav>
@@ -41,20 +41,20 @@
         <form>
           <div class="form-group">
             <label for="population">Population</label>
-            <input type="number" class="form-control" data-population id="population" aria-describedby="populationHelp" placeholder="Enter Population">
+            <input type="number" class="form-control" data-population id="population" aria-describedby="populationHelp" required placeholder="Enter Population">
             <small id="populationHelp" class="form-text text-muted">Enter Population of the Region.</small>
           </div>
           <div class="form-group">
             <label for="timeToElapse">Time to Elapse</label>
-            <input type="number" data-time-to-elapse class="form-control" id="timeToElapse" placeholder="Enter Time To Elapse">
+            <input type="number" data-time-to-elapse class="form-control" id="timeToElapse" placeholder="Enter Time To Elapse" required>
           </div>
           <div class="form-group">
             <label for="reportedCases">Reported Cases</label>
-            <input type="number" data-reported-cases class="form-control" id="reportedCases" placeholder="Enter number of Reported Cases">
+            <input type="number" data-reported-cases class="form-control" id="reportedCases" placeholder="Enter number of Reported Cases" required>
           </div>
           <div class="form-group">
             <label for="totalHospitalBeds">Total Hospital Beds</label>
-            <input type="number" data-total-hospital-beds class="form-control" id="totalHospitalBeds" placeholder="Enter number of Total Hospital Beds">
+            <input type="number" data-total-hospital-beds class="form-control" id="totalHospitalBeds" placeholder="Enter number of Total Hospital Beds" required>
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
