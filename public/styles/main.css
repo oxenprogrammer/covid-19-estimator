@@ -1,14 +1,10 @@
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
 .navbar-brand {
   color: #ffffff;
   font-size: 30px;
 }
 .container {
   background: #000000;
+  width: 80%;
 }
 form {
   margin: 20px;
@@ -18,52 +14,28 @@ form {
   font-size: 20px;
   color: #ffffff;
 }
-@media (min-width: 1281px) {
-  .container {
-    width: 60%;
-  }
+
+.btn {
+	box-shadow: 1px 9px 14px -7px #3e7327;
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	background-color:#77b55a;
+	border-radius:9px;
+	border:2px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:26px;
+	font-weight:bold;
+	padding:11px 67px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
 }
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .container {
-    width: 60%;
-  }
+.btn:hover {
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	background-color:#72b352;
 }
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    width: 80%;
-  }
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    width: 60%;
-  }
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .container {
-    width: 80%;
-  }
+.btn:active {
+	position:relative;
+	top:1px;
 }
