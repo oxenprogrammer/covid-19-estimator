@@ -1,3 +1,6 @@
+/* eslint-disable class-methods-use-this */
+/* eslint-disable consistent-return */
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable no-console */
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
@@ -10,3 +13,4 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
+
