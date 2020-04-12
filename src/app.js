@@ -1,3 +1,5 @@
+// import covid19ImpactEstimator from './estimator';
+
 /* eslint-disable class-methods-use-this */
 /* eslint-disable consistent-return */
 /* eslint-disable no-underscore-dangle */
@@ -14,3 +16,5 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+const population = document.querySelector('#population').value;
+console.log('population', population);
