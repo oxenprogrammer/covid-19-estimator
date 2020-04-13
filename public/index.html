@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="manifest" href="../manifest.json" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Covid-19-estimator">
+    <meta name="apple-mobile-web-app-title" content="Covid-19-estimator">
+    <meta name="msapplication-starturl" content="/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Author: Emanuel Okello, COVID-19 converter to help governments predict how the virus spreads and help the economy">
+    <meta name="keywords" content="COVID-19 Converter, Novelty Corona Virus, Build for SDG, Andela Challenge, Facebook Challenge">
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+    <title>Covid-19-estimator</title>
+  </head>
+  <body>
+    <main>
+      <!-- Image and text -->
+      <nav class="navbar navbar-dark bg-dark">
+        <img src="./images/icons/icon-152x152.png" class="d-inline-block align-top" alt="">
+      </nav>
+
+      <form>
+        <div id="form-main-container">
+        <div id="form-area">
+          <div id="form-title">
+            COVID-19 Converter
+          </div>
+          <div id="form-body">
+            <div>
+              <div class="col-12">
+                <fieldset class="form-group">
+                  <label class="form-label" for="population">Population</label>
+                  <input type="number" data-population class="form-control" id="population" placeholder="Enter Regional Population" required>
+                </fieldset>
+              </div>
+              <div class="col-12">
+                <fieldset class="form-group">
+                  <label class="form-label" for="timeToElapse">Time to Elapse</label>
+                  <input type="number" data-time-to-elapse class="form-control" id="timeToElapse" placeholder="Enter Time to Elapse" required>
+                </fieldset>
+              </div>
+              <div class="col-12">
+                <fieldset class="form-group">
+                  <label class="form-label" for="reportedCases">Reported Cases</label>
+                  <input type="number" data-reported-cases class="form-control" id="reportedCases" placeholder="Enter Reported Cases" required>
+                </fieldset>
+              </div>
+              <div class="col-12">
+                <fieldset class="form-group">
+                  <label class="form-label" for="totalHospitalBeds">Total Hospital Beds</label>
+                  <input type="number" data-total-hospital-beds class="form-control" id="totalHospitalBeds" placeholder="Enter Enter Total Hospital Beds" required>
+                </fieldset>
+              </div>
+              <div class="col-12">
+                <fieldset class="form-group">
+                  <label class="form-label" for="periodType">Choose Period Type</label>
+                  <select data-period-type class="form-control" id="periodType">
+                    <option value="days" selected=true>Days</option>
+                    <option value="weeks">Weeks</option>
+                    <option value="months">Months</option>
+                  </select>
+                </fieldset>
+              </div>
+            </div>
+            <div>
+              <div class="center-text button-area">
+                <button type="button" data-go-estimate class="btn btn-cancel">Submit</button>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      </form>
+    </main>
+    <script src="../src/app.js"></script>
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performance
+          window.addEventListener('load', () => {
+          navigator.serviceWorker.register('../serviceWorker.js');
+          });
+      }
+    </script>
+  </body>
+</html>
